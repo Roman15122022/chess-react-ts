@@ -8,7 +8,7 @@ export class Pawn extends Figure {
 
     constructor(color: Colors, cell: Cell) {
         super(color, cell);
-        this.color = color === Colors.BLACK ? blackLogo : whiteLogo;
+        this.logo = color === Colors.BLACK ? blackLogo : whiteLogo;
         this.name = FigureNames.PAWN;
     }
 }

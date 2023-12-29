@@ -13,7 +13,7 @@ export enum FigureNames {
 }
 
 export class Figure {
-    color: Colors;
+    color: any;
     logo: typeof logo | null;
     cell: Cell;
     name: FigureNames;

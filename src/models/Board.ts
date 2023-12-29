@@ -20,10 +20,10 @@ export class Board {
         }
     }
 
-    getCell(x: number, y: number) {
-        return this.cells[x][y];
+    public getCell(x: number, y: number) {
+        return this.cells[y][x];
     }
     public addFigures() {
-        new Queen(Colors.WHITE, this.getCell(3,3))
+        new Queen(Colors.WHITE, this.getCell(3,3));
     }
 }
